@@ -6,7 +6,12 @@ namespace satire
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var first = args[0].Substring(0, int.Parse(args[1]));
+            var second = args[0].Substring(int.Parse(args[1]));
+
+            Console.WriteLine(first);
+            Console.WriteLine(second);
+
         }
     }
 }
